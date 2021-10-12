@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Dump Trump",
+    "version": "1.0",
+    "description": "This extension will find and replace all appearances of Trump with some insulting nickname. It will later report how many Trumps perished.",
+    "content_scripts": [
+      {
+        "matches": [
+          "<all_urls>"
+        ],
+        "js": ["trump.js"]
+      }
+    ],
+    "background": {
+      "scripts": ["background.js"]
+    },
+    "browser_action": {
+        "default_icon": "trump.png"
+    }
+  }
