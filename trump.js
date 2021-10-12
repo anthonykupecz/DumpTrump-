@@ -16,9 +16,5 @@ function getMessage(message, sender, sendResponse) {
     //Reset the page and report
     document.body.innerHTML = page;
     
-    sendReport(countTrumps)
-}
-
-function sendReport(num) {
-    alert(String(num) + " Oranges Rotted Away");
+    alert(String(countTrumps) + " Oranges Rotted Away");
 }
